@@ -12,3 +12,4 @@ C:\Lemaar\programming\asp_net\RiraTask\productsManager\obj\Debug\net10.0\refint\
 C:\Lemaar\programming\asp_net\RiraTask\productsManager\obj\Debug\net10.0\productsManager.pdb
 C:\Lemaar\programming\asp_net\RiraTask\productsManager\obj\Debug\net10.0\productsManager.genruntimeconfig.cache
 C:\Lemaar\programming\asp_net\RiraTask\productsManager\obj\Debug\net10.0\ref\productsManager.dll
+C:\Lemaar\programming\asp_net\RiraTask\productsManager\obj\Debug\net10.0\productsManager.sourcelink.json

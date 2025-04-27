@@ -1,0 +1,15 @@
+C:\Lemaar\programming\asp_net\RiraTask\productsManager\obj\Debug\net8.0\productsManager.GeneratedMSBuildEditorConfig.editorconfig
+C:\Lemaar\programming\asp_net\RiraTask\productsManager\obj\Debug\net8.0\productsManager.AssemblyInfoInputs.cache
+C:\Lemaar\programming\asp_net\RiraTask\productsManager\obj\Debug\net8.0\productsManager.AssemblyInfo.cs
+C:\Lemaar\programming\asp_net\RiraTask\productsManager\obj\Debug\net8.0\productsManager.csproj.CoreCompileInputs.cache
+C:\Lemaar\programming\asp_net\RiraTask\productsManager\obj\Debug\net8.0\productsManager.sourcelink.json
+C:\Lemaar\programming\asp_net\RiraTask\productsManager\obj\Debug\net8.0\productsManager.dll
+C:\Lemaar\programming\asp_net\RiraTask\productsManager\obj\Debug\net8.0\refint\productsManager.dll
+C:\Lemaar\programming\asp_net\RiraTask\productsManager\obj\Debug\net8.0\productsManager.pdb
+C:\Lemaar\programming\asp_net\RiraTask\productsManager\bin\Debug\net8.0\productsManager.exe
+C:\Lemaar\programming\asp_net\RiraTask\productsManager\bin\Debug\net8.0\productsManager.deps.json
+C:\Lemaar\programming\asp_net\RiraTask\productsManager\bin\Debug\net8.0\productsManager.runtimeconfig.json
+C:\Lemaar\programming\asp_net\RiraTask\productsManager\bin\Debug\net8.0\productsManager.dll
+C:\Lemaar\programming\asp_net\RiraTask\productsManager\bin\Debug\net8.0\productsManager.pdb
+C:\Lemaar\programming\asp_net\RiraTask\productsManager\obj\Debug\net8.0\productsManager.genruntimeconfig.cache
+C:\Lemaar\programming\asp_net\RiraTask\productsManager\obj\Debug\net8.0\ref\productsManager.dll

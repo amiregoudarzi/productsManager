@@ -1,0 +1,17 @@
+Rira Task:
+
+1. Tarodev : LINQ + Lambda expressions - C# tutorial
+
+2. BroCode : C# enums 
+
+3. dotnet : Language Integrated Query (LINQ) and IEnumerable // lists 
+
+4. var for shortening the code
+
+5. geeksforgeeks: LINQ | How to find maximum value of the given sequence?
+
+6. geeksforgeeks: LINQ | How to find the sum of the given Sequence?
+
+7. chatgpt: query linq vs method linq and final revision for typos or
+	 				better performance of the code.
+8. 

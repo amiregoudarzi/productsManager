@@ -16,61 +16,39 @@ class Program
          new Product( 5, "Product E", Categories.Category1, 80 )
       };
 
-      // finds all the products dedicated to category1 
+      var productService = new ProductService(products);
 
-      var productsInCategory1 =  from product in products
-                                 where product.Category == Categories.Category1
-                                 select product;
-      
-      foreach (var product in productsInCategory1)
+      // get all the products in category1
+      var category1Products = productService.GetProductsByCategory(Categories.Category1);
+      Console.WriteLine("1. Category 1 Products:");
+      foreach (var product in category1Products)
       {
-         Console.WriteLine($"Id: {product.Id}, Name: {product.Name}, Price: {product.Price}");
+         Console.WriteLine($"   Id: {product.Id}, Name: {product.Name}, Price: {product.Price}");
       }
 
+      // getting the max price among all products
+      var maxPriceProduct = productService.GetMaxPriceProduct();
+      Console.WriteLine($"\n2. Max Price Product: {maxPriceProduct.Name} - Price: {maxPriceProduct.Price}");
 
-      // finds the max price between products
+      // gets the total price of all products
+      var totalPrice = productService.GetTotalPrice();
+      Console.WriteLine($"\n3. Total Price of all products: {totalPrice}");
 
-      // var maxPriceProduct = products.OrderByDescending(p => p.Price).First(); 
-      // Console.WriteLine($"Maximum price among the products: {maxPriceProduct.Name}: {maxPriceProduct.Price}"); 
+      //  average of total price
+      var averagePrice = productService.GetAveragePrice();
+      Console.WriteLine($"\n4. Average Price: {averagePrice}");
 
-      var maxPriceProduct =   (from product in products
-                              orderby product.Price descending
-                              select product).First();
-      Console.WriteLine($"Maximum price among the products: {maxPriceProduct.Name}: {maxPriceProduct.Price}"); 
-
-      
-
-      // Total price of all products in the list
-
-      // var productsTotalPrice = products.Sum(p => p.Price);
-      // Console.WriteLine($"Total price of all products is: {productsTotalPrice}");
-
-      var productsTotalPrice =   (from product in products
-                                 select product.Price).Sum(); 
-
-      // group by category
-      var productsGroupByCategory = from c in products
-                                    group c by c.Category;
-      
-      foreach (var cat in productsGroupByCategory)
+      // Group products by their category
+      var groupedProducts = productService.GetProductsGroupedByCategory();
+      Console.WriteLine("\n5. Grouped Products by Category:");
+      foreach (var group in groupedProducts)
       {
-         Console.WriteLine($"Grouped by {cat.Key}:");
-
-         foreach (Product c in cat)
+         Console.WriteLine($"Category: {group.Key}");
+         foreach (var product in group)
          {
-            Console.WriteLine($"Product name: {c.Name}");
+               Console.WriteLine($"    {product.Name}");
          }
       }
-
-      // to get the average ampunt of all prices 
-      var averageProductsPrice = products.Average(p => p.Price);
-      Console.WriteLine($"The Average price of all products: {averageProductsPrice}");
-
-      // get total price of the list and devide by list length 
-
-      var averageProductsPrice2 = productsTotalPrice / products.Count;
-      Console.WriteLine(averageProductsPrice2);
-
    }
 
 }
